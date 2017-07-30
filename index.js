@@ -17,7 +17,7 @@ var firstPresidentCloze = new ClozeCard(
 console.log(3+firstPresidentCloze.cloze); 
 
 // " ... was the first president of the United States.
-console.log(4+firstPresidentCloze.partial);
+console.log(firstPresidentCloze.partial);
 
 // "George Washington was the first president of the United States.
 console.log(5+firstPresidentCloze.fullText);

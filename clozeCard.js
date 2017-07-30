@@ -1,10 +1,12 @@
 function ClozeCard(text, cloze) {
     this.cloze = cloze;
-    this.partial = text.replace(cloze, '...');
+    this.partial = this.checkCloze;
     this.fullText = text;
     this.checkCloze = function() {
         if(this.fullText.indexOf(cloze) === -1) {
-            console.log('Sorry, the text does not include the cloze.')
+            return 'Sorry, the text does not include the cloze.';
+        } else {
+            return text.replace(cloze, '...');
         }
     };
 }
